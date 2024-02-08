@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Instagram post - 1</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Times+New+Roman%3A400"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina%3A400"/>
+  <link rel="stylesheet" href="./styles/instagram-post-1.css"/>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .instagram-post-1-B3z {
+      max-width: 600px;
+      padding: 20px;
+      /* Add any other styles as needed */
+    }
+
+    .dropdown-ac {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="instagram-post-1-B3z">
+    <p class="j-c-t-s-l-PpG">J. C. T. S. L.</p>
+    <p class="todi-depot-kHS">TODI Depot</p>
+    <div class="auto-group-kqrz-yAC">
+      <p class="no-000000594-7ZE">No-000000594</p>
+      <p class="item-24-01-24-ybS" id="currentDate"></p>
+      <p class="item-11-43-52-2Zi" id="currentTime"></p>
+    </div>
+    <div class="auto-group-kstu-HEk">
+      <div class="dropdown-ac">
+        <label for="acDropdown">Select AC Type:</label>
+        <select id="acDropdown" name="acType">
+          <option value="NON AC">NON AC</option>
+          <option value="AC">AC</option>
+        </select>
+      </div>
+      <div class="editable-rj-number">
+        <label for="rjNumberInput">RJ Number:</label>
+        <input type="text" id="rjNumberInput" oninput="updateRjNumber(this)" />
+      </div>
+      <p class="tdi0000520-ggC">TDI0000520</p>
+    </div>
+    <div class="auto-group-3xf2-aWg">
+      <p class="item--3v4"> ✱ ✱</p>
+      <p class="ladies-concession-tfn">LADIES CONCESSION</p>
+      <p class="item--MZN"> ✱ ✱</p>
+    </div>
+
+    <div class="dropdown-station">
+      <label for="stationDropdown">Select Station:</label>
+      <select id="stationDropdown" name="station" onchange="updateJourneyKilometers()">
+        <option value="Sanganer">Sanganer</option>
+        <option value="Sanganer THAN">Sanganer Than</option>
+        <option value="RAM MANDIR">Ram Mandir</option>
+        <option value="TARO KI KOOT">Taro Ki Koot</option>
+        <option value="JAWAHAR CIRCL ">Jawahar Circle </option>
+        <option value="DURGAPURA">Durgapura</option>
+        <option value="GOPALPURA">Gopalpura</option>
+        <option value="SAYEED KA GAT">Sayeed Ka Gat</option>
+        <option value="TONK PHATAK">Tonk Phatak</option>
+        <option value="GANDHI NAGAR">Gandhi Nagar</option>
+        <option value="LAL KOTHI">Lal Kothi</option>
+        <option value="RAMBAGH CIRCL">Rambagh Circle</option>
+        <option value="NARAYAN SINGH">Narayan Singh</option>
+        <option value="SMS HOSPITAL">SMS Hospital</option>
+        <option value="AJMERI GATE">Ajmeri Gate </option>
+        <option value="SANGANERI GAT">Sanganeri Gate</option>
+        <option value="BADI CHOPAR">Badi Chopar</option>
+        <option value="RAMGARH MODE">Ramgarh Mode</option>
+        <option value="JORAWER SINGH">Jorawer Singh</option>
+        <option value="SUBHASH CHOWK">Subhash Chowk</option>
+        <option value="JAL MAHAL">Jal Mahal</option>
+        <option value="KANAK GHATI">Kanak Ghati</option>
+        <option value="AMER">Amer</option>
+        <option value="KUNDA">Kunda</option>
+        <option value="KUKAS">Kukas</option>
+      </select>
+    </div>
+
+    <p class="to-vVz">To</p>
+    <div class="dropdown-bagru">
+      <label for="bagruDropdown">Select BAGRU:</label>
+      <select id="bagruDropdown" name="bagru" onchange="updateJourneyKilometers()">
+        <option value="Sanganer">Sanganer</option>
+        <option value="Sanganer THAN">Sanganer Than</option>
+        <option value="RAM MANDIR">Ram Mandir</option>
+        <option value="TARO KI KOOT">Taro Ki Koot</option>
+        <option value="JAWAHAR CIRCL ">Jawahar Circle </option>
+        <option value="DURGAPURA">Durgapura</option>
+        <option value="GOPALPURA">Gopalpura</option>
+        <option value="SAYEED KA GAT">Sayeed Ka Gat</option>
+        <option value="TONK PHATAK">Tonk Phatak</option>
+        <option value="GANDHI NAGAR">Gandhi Nagar</option>
+        <option value="LAL KOTHI">Lal Kothi</option>
+        <option value="RAMBAGH CIRCL">Rambagh Circle</option>
+        <option value="NARAYAN SINGH">Narayan Singh</option>
+        <option value="SMS HOSPITAL">SMS Hospital</option>
+        <option value="AJMERI GATE">Ajmeri Gate </option>
+        <option value="SANGANERI GAT">Sanganeri Gate</option>
+        <option value="BADI CHOPAR">Badi Chopar</option>
+        <option value="RAMGARH MODE">Ramgarh Mode</option>
+        <option value="JORAWER SINGH">Jorawer Singh</option>
+        <option value="SUBHASH CHOWK">Subhash Chowk</option>
+        <option value="JAL MAHAL">Jal Mahal</option>
+        <option value="KANAK GHATI">Kanak Ghati</option>
+        <option value="AMER">Amer</option>
+        <option value="KUNDA">Kunda</option>
+        <option value="KUKAS">Kukas</option>
+      </select>
+    </div>
+
+    <p class="tot-journey-kms-1700-ZJ4" id="journeyDistance">TOT.   JOURNEY      KMs  = 0.00</p>
+    <p class="full-1-20-200-GiG">FULL :- 1 * 20 ₹ 20.0</p>
+    <p class="item-2000-aU4">
+      <span class="item-2000-aU4-sub-0">₹ </span>
+      <span class="item-2000-aU4-sub-1">20.00</span>
+    </p>
+    <p class="tdi0000520-008-c1706-ver-13-6jE">TDI0000520 008 C1706 VER-1.3</p>
+    <p class="not-transferable-nc4">NOT TRANSFERABLE</p>
+    <script>
+      // Get current date and time
+      const currentDateElement = document.getElementById('currentDate');
+      const currentTimeElement = document.getElementById('currentTime');
+
+      const currentDate = new Date().toLocaleDateString();
+      const currentTime = new Date().toLocaleTimeString();
+
+      currentDateElement.textContent = currentDate;
+      currentTimeElement.textContent = currentTime;
+
+      function updateRjNumber(input) {
+        const rjNumberElement = document.getElementById('rjNumberInput');
+        rjNumberElement.value = input.value;
+        rjNumberElement.setAttribute('readonly', true);
+      }
+
+      function updateJourneyKilometers() {
+        const fromStation = document.getElementById("stationDropdown").value;
+        const toStation = document.getElementById("bagruDropdown").value;
+
+        // Define distances between stations (in kilometers)
+        const stationDistances = {
+          "Sanganer": 0,
+          "Sanganer THAN": 2,
+          "RAM MANDIR": 3,
+          "TARO KI KOOT": 4,
+          "JAWAHAR CIRCL": 5,
+          "DURGAPURA": 6,
+          "GOPALPURA": 7,
+          "SAYEED KA GAT": 8,
+          "TONK PHATAK": 9,
+          "GANDHI NAGAR": 10,
+          "LAL KOTHI": 11,
+          "RAMBAGH CIRCL": 12,
+          "NARAYAN SINGH": 12,
+          "SMS HOSPITAL": 13,
+          "AJMERI GATE": 14,
+          "SANGANERI GAT": 15,
+          "BADI CHOPAR": 16,
+          "RAMGARH MODE": 17,
+          "JORAWER SINGH": 18,
+          "SUBHASH CHOWK": 20,
+          "JAL MAHAL": 21,
+          "KANAK GHATI": 22,
+          "AMER": 25,
+          "KUNDA": 28,
+          "KUKAS": 32
+        };
+
+        // Get distances from the dictionary
+        const distance = stationDistances[toStation] - stationDistances[fromStation];
+
+        // Update the UI with the calculated distance
+        document.getElementById("journeyDistance").textContent = `TOT. JOURNEY KMs = ${Math.abs(distance).toFixed(2)}`;
+      }
+      
+    </script>
+  </div>
+</body>
+</html>
